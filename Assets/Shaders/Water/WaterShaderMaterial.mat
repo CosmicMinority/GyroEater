@@ -46,8 +46,8 @@ Material:
     - _RippleSpeed: 1
     - _Size: 5
     m_Colors:
-    - _Colour: {r: 0.5330188, g: 0.9619378, b: 1, a: 0}
-    - _RippleColour: {r: 0.6650944, g: 0.9640707, b: 1, a: 0}
+    - _Colour: {r: 0, g: 1, b: 0.88612795, a: 0}
+    - _RippleColour: {r: 0, g: 1, b: 0.9495225, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &803626035612703918
 MonoBehaviour:
