@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1182071861849466417}
   - component: {fileID: 5463420920212882440}
   - component: {fileID: 8154519839341447460}
+  - component: {fileID: 7003560655388578408}
   m_Layer: 0
   m_Name: Flash
   m_TagString: Untagged
@@ -4886,6 +4887,18 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!210 &7003560655388578408
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081698408336584660}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 21
+  m_SortAtRoot: 0
 --- !u!1 &2944396702758532163
 GameObject:
   m_ObjectHideFlags: 0
@@ -4897,6 +4910,8 @@ GameObject:
   - component: {fileID: 1350034135309904283}
   - component: {fileID: 3891973445508218817}
   - component: {fileID: 4708752827492353578}
+  - component: {fileID: 5623573252256926009}
+  - component: {fileID: 6674631854470665090}
   m_Layer: 0
   m_Name: Fish Eat FX
   m_TagString: Untagged
@@ -4914,7 +4929,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3592529357826614538}
@@ -9785,6 +9800,31 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!210 &5623573252256926009
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2944396702758532163}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 21
+  m_SortAtRoot: 0
+--- !u!114 &6674631854470665090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2944396702758532163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3caa94ea4e53b045b2af8c4d4482d97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionTime: 1.5
 --- !u!1 &3646487531195122515
 GameObject:
   m_ObjectHideFlags: 0
@@ -9796,6 +9836,7 @@ GameObject:
   - component: {fileID: 3592529357826614538}
   - component: {fileID: 612185152094128911}
   - component: {fileID: 4626605081698912600}
+  - component: {fileID: 6692759686325110399}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -14680,6 +14721,18 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!210 &6692759686325110399
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3646487531195122515}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 21
+  m_SortAtRoot: 0
 --- !u!1 &8740791384859665614
 GameObject:
   m_ObjectHideFlags: 0
@@ -14691,6 +14744,7 @@ GameObject:
   - component: {fileID: 6112182523266843006}
   - component: {fileID: 1209375486372575963}
   - component: {fileID: 3166369464380465265}
+  - component: {fileID: 7467370526990388080}
   m_Layer: 0
   m_Name: ShockWave
   m_TagString: Untagged
@@ -19566,6 +19620,18 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!210 &7467370526990388080
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8740791384859665614}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 21
+  m_SortAtRoot: 0
 --- !u!1 &8846329442708547555
 GameObject:
   m_ObjectHideFlags: 0
@@ -19577,6 +19643,7 @@ GameObject:
   - component: {fileID: 5291617695852614040}
   - component: {fileID: 4752544937895253658}
   - component: {fileID: 6308314191420394085}
+  - component: {fileID: 1149936090928141390}
   m_Layer: 0
   m_Name: Sparks
   m_TagString: Untagged
@@ -24461,3 +24528,15 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!210 &1149936090928141390
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8846329442708547555}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 21
+  m_SortAtRoot: 0

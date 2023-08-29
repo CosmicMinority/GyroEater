@@ -26,17 +26,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 9c67b075b5fd6384cac9da677d2d738e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 27.714859
+      value: 135.48984
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c67b075b5fd6384cac9da677d2d738e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 215.9
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c67b075b5fd6384cac9da677d2d738e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 32.056915
+      value: -308.2097
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c67b075b5fd6384cac9da677d2d738e,
         type: 3}
@@ -51,7 +51,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 9c67b075b5fd6384cac9da677d2d738e,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c67b075b5fd6384cac9da677d2d738e,
         type: 3}
@@ -83,8 +83,44 @@ PrefabInstance:
       propertyPath: m_Name
       value: SmolFish
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9c67b075b5fd6384cac9da677d2d738e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Fish
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9c67b075b5fd6384cac9da677d2d738e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8223318884669154624}
   m_SourcePrefab: {fileID: 100100000, guid: 9c67b075b5fd6384cac9da677d2d738e, type: 3}
+--- !u!1 &4284410874978664973 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9c67b075b5fd6384cac9da677d2d738e,
+    type: 3}
+  m_PrefabInstance: {fileID: 4013869642213867356}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &8223318884669154624
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4284410874978664973}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.3932347, y: 1.1014316, z: 2.178625}
+  m_Center: {x: -0.20987368, y: 0, z: 0.08931272}
