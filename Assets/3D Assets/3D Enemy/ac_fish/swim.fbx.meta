@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1c0761d64a2568a4c80f04e0ee6dba4f
+guid: 948e5bfe64cd0f840a3ea013eb713a18
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -90,16 +90,17 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.01
     rootMotionBoneName: enemyFish
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 1c0761d64a2568a4c80f04e0ee6dba4f,
+    type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 2
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
