@@ -11,6 +11,7 @@ public class Gyro_Script : MonoBehaviour
     public float RotSpeed;
     public Animator Animator;
     Vector3 RotAxis;
+    public Transform player;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +33,6 @@ public class Gyro_Script : MonoBehaviour
         
         
        
-        Animator.SetFloat("Input direction",transform.rotation.x);
+        Animator.SetFloat("Input direction",player.rotation.eulerAngles.x);
     }
 }

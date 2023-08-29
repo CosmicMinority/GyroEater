@@ -26,12 +26,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3135477652072800197}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.508, y: 0.16, z: 1.087}
-  m_LocalScale: {x: 0.39897, y: 0.39897, z: 0.39897}
+  m_LocalRotation: {x: -0.53647494, y: 0.4635251, z: 0.4710503, w: 0.52483404}
+  m_LocalPosition: {x: -0.0024346032, y: 0.024233673, z: 0.0047790073}
+  m_LocalScale: {x: 0.0039897007, y: 0.0039896993, z: 0.0039897007}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7152244378058921878}
+  m_Father: {fileID: 6931813989318186363}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5056279005867817536
 MeshFilter:
@@ -109,12 +109,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7276267722250624532}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.023273416, y: -0, z: -0, w: 0.99972916}
-  m_LocalPosition: {x: 0.436, y: 0.212, z: 1.076}
-  m_LocalScale: {x: 0.39897, y: 0.39897, z: 0.39897}
+  m_LocalRotation: {x: -0.524115, y: 0.47436255, z: 0.4601348, w: 0.5371775}
+  m_LocalPosition: {x: -0.0017539861, y: 0.024086285, z: -0.004650236}
+  m_LocalScale: {x: 0.0039897, y: 0.0039896993, z: 0.0039896993}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7152244378058921878}
+  m_Father: {fileID: 6931813989318186363}
   m_LocalEulerAnglesHint: {x: 2.667, y: 0, z: 0}
 --- !u!33 &3163763036301515246
 MeshFilter:
@@ -249,6 +249,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyFish
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 1c0761d64a2568a4c80f04e0ee6dba4f,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3f654fe9872f8394297c952f78e025b7, type: 2}
     - target: {fileID: 8743813690021804245, guid: 1c0761d64a2568a4c80f04e0ee6dba4f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -257,11 +262,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1c0761d64a2568a4c80f04e0ee6dba4f,
+    - targetCorrespondingSourceObject: {fileID: 358486126990009606, guid: 1c0761d64a2568a4c80f04e0ee6dba4f,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 8442237465468252515}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1c0761d64a2568a4c80f04e0ee6dba4f,
+    - targetCorrespondingSourceObject: {fileID: 358486126990009606, guid: 1c0761d64a2568a4c80f04e0ee6dba4f,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 117997013535889716}
@@ -275,9 +280,15 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 5106085944139709}
   m_SourcePrefab: {fileID: 100100000, guid: 1c0761d64a2568a4c80f04e0ee6dba4f, type: 3}
---- !u!4 &7152244378058921878 stripped
+--- !u!95 &3864594850913537516 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 1c0761d64a2568a4c80f04e0ee6dba4f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7262996832572272765}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6931813989318186363 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1c0761d64a2568a4c80f04e0ee6dba4f,
+  m_CorrespondingSourceObject: {fileID: 358486126990009606, guid: 1c0761d64a2568a4c80f04e0ee6dba4f,
     type: 3}
   m_PrefabInstance: {fileID: 7262996832572272765}
   m_PrefabAsset: {fileID: 0}
@@ -302,6 +313,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   enemyspeed: 10
   attackPlayer: 0
+  fish: {fileID: 3864594850913537516}
 --- !u!54 &5106085944139709
 Rigidbody:
   m_ObjectHideFlags: 0

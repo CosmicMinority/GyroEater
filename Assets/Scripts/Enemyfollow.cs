@@ -8,6 +8,7 @@ public class Enemyfollow : MonoBehaviour
     Rigidbody rb;
     public float enemyspeed;
     public bool attackPlayer;
+    public Animator fish;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -41,12 +42,14 @@ public class Enemyfollow : MonoBehaviour
 
     void StartChasing()
     {
+        fish.SetBool("Chase", true);
         attackPlayer = true;
     }
 
     void StopChasing()
     {
-        attackPlayer= false;
+        fish.SetBool("Chase", false);
+        attackPlayer = false;
     }
 
 
