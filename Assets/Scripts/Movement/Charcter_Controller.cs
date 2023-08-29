@@ -6,7 +6,7 @@ public class Character_Controller : MonoBehaviour
 {
     public Rigidbody Rb;
     public float Speed;
-    public float Lift;
+    //public float Lift;
     public float maxSpeed;
     Vector3 movementDirection;
 
@@ -24,7 +24,7 @@ public class Character_Controller : MonoBehaviour
        // Rb.AddForce(transform.forward * Speed, ForceMode.Acceleration);
         Rb.AddRelativeForce(Vector3.forward* Speed, ForceMode.Acceleration);
 
-        Rb.AddRelativeForce(Vector3.up * Lift, ForceMode.Acceleration);
+        //Rb.AddRelativeForce(Vector3.up* Lift, ForceMode.Acceleration);
 
 
 
