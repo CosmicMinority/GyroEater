@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43237847, g: 0.4331258, b: 0.5325612, a: 1}
+  m_IndirectSpecularColor: {r: 0.43130064, g: 0.43313202, b: 0.5327199, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2240,7 +2240,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 800260443}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.113265224, y: -0.000000007402635, z: 8.4389173e-10, w: 0.9935648}
+  m_LocalRotation: {x: 0.11326522, y: 4.383736e-16, z: 1.0422577e-17, w: 0.9935648}
   m_LocalPosition: {x: 58, y: 266.11, z: -73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3044,7 +3044,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &989271272
 Transform:
   m_ObjectHideFlags: 0
@@ -4248,7 +4248,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343250612}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.113265224, y: -0.000000007402635, z: 8.4389173e-10, w: 0.9935648}
+  m_LocalRotation: {x: 0.11326522, y: 4.383736e-16, z: 1.0422577e-17, w: 0.9935648}
   m_LocalPosition: {x: 58, y: 266.11, z: -73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6871,6 +6871,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3096888414973234531, guid: 11efd909772ca714d9a61ec6d0529a54,
+        type: 3}
+      propertyPath: Waterfilter
+      value: 
+      objectReference: {fileID: 989271271}
     - target: {fileID: 3248775939830430574, guid: 11efd909772ca714d9a61ec6d0529a54,
         type: 3}
       propertyPath: m_Name
