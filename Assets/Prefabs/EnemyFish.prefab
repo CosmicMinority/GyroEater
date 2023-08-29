@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 3135477652072800197}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.0445236, y: 0.5124997, z: 0.25000006}
+  m_LocalPosition: {x: -0.508, y: 0.16, z: 1.087}
   m_LocalScale: {x: 0.39897, y: 0.39897, z: 0.39897}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -109,13 +109,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7276267722250624532}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.0445236, y: -0.48750025, z: 0.24999994}
+  m_LocalRotation: {x: 0.023273416, y: -0, z: -0, w: 0.99972916}
+  m_LocalPosition: {x: 0.436, y: 0.212, z: 1.076}
   m_LocalScale: {x: 0.39897, y: 0.39897, z: 0.39897}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7152244378058921878}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 2.667, y: 0, z: 0}
 --- !u!33 &3163763036301515246
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -249,6 +249,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyFish
       objectReference: {fileID: 0}
+    - target: {fileID: 8743813690021804245, guid: 1c0761d64a2568a4c80f04e0ee6dba4f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e5ba7dc2054f9834e9e8a37d699a08cf, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -289,13 +294,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7496858347905010988}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f475593e9a9999548b768b9659a4d186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  enemyspeed: 30
+  enemyspeed: 15
   attackPlayer: 0
 --- !u!54 &5106085944139709
 Rigidbody:
