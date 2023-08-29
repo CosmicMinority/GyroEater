@@ -22,7 +22,7 @@ public class Gyro_Script : MonoBehaviour
     {
        // Rotation = - Input.gyro.rotationRateUnbiased;
        
-        Rotation = new Vector3(-Input.gyro.rotationRateUnbiased.x, Input.gyro.rotationRateUnbiased.y,Input.gyro.rotationRateUnbiased.z);
+        Rotation = new Vector3(-Input.gyro.rotationRateUnbiased.x,- Input.gyro.rotationRateUnbiased.y,Input.gyro.rotationRateUnbiased.z);
        // transform.rotation = - Input.gyro.attitude;
         transform.Rotate(Rotation*RotSpeed*Time.deltaTime);
     }
