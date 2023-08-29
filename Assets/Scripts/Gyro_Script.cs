@@ -9,10 +9,14 @@ public class Gyro_Script : MonoBehaviour
 {
     Vector3 Rotation;
     public float RotSpeed;
+    public Animator Animator;
+    Vector3 RotAxis;
 
     // Start is called before the first frame update
     void Start()
     {
+
+        
         Rotation = Vector3.zero;  
         Input.gyro.enabled=true;
     }
@@ -25,5 +29,9 @@ public class Gyro_Script : MonoBehaviour
         Rotation = new Vector3(-Input.gyro.rotationRateUnbiased.x,- Input.gyro.rotationRateUnbiased.y,Input.gyro.rotationRateUnbiased.z);
        // transform.rotation = - Input.gyro.attitude;
         transform.Rotate(Rotation*RotSpeed*Time.deltaTime);
+        
+        
+       
+        Animator.SetFloat("Input direction",transform.rotation.x);
     }
 }

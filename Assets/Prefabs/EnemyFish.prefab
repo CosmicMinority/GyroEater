@@ -300,7 +300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  enemyspeed: 15
+  enemyspeed: 10
   attackPlayer: 0
 --- !u!54 &5106085944139709
 Rigidbody:

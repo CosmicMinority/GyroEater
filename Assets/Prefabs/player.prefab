@@ -260,7 +260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe99cc637bf9d4447ae45b9eda2a42b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotSpeed: 50
+  RotSpeed: 85
 --- !u!114 &2560219516912440480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,8 +274,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Rb: {fileID: 6751741926922308826}
-  Speed: 7
-  maxSpeed: 15
+  Speed: 20
+  maxSpeed: 30
 --- !u!210 &565441849053185206
 SortingGroup:
   m_ObjectHideFlags: 0
