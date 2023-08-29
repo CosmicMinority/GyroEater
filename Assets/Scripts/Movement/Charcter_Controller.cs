@@ -8,23 +8,26 @@ public class Character_Controller : MonoBehaviour
     public float Speed;
     public float Lift;
     public float maxSpeed;
+    Vector3 movementDirection;
+
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        Rb.AddForce(transform.forward * Speed, ForceMode.Acceleration);
+       // Rb.AddForce(transform.forward * Speed, ForceMode.Acceleration);
+        Rb.AddRelativeForce(Vector3.forward* Speed, ForceMode.Acceleration);
+
+        Rb.AddRelativeForce(Vector3.up * Lift, ForceMode.Acceleration);
 
 
-        Rb.AddForce(transform.up * Lift, ForceMode.Acceleration);
 
-
-
-        Rb.velocity = Vector3.ClampMagnitude(Rb.velocity, maxSpeed);
+       Rb.velocity = Vector3.ClampMagnitude(Rb.velocity, maxSpeed);
     }
 }
