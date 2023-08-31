@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 565441849053185206}
   m_Layer: 0
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -260,7 +260,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe99cc637bf9d4447ae45b9eda2a42b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotSpeed: 85
+  RotSpeed: 245
+  Animator: {fileID: 1818930236991279571}
+  player: {fileID: 904449582717050589}
 --- !u!114 &2560219516912440480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -461,6 +463,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4451309133640681512}
   - component: {fileID: 4718090091557032526}
+  - component: {fileID: 8855913605043483893}
   m_Layer: 0
   m_Name: EAT BOX
   m_TagString: eat
@@ -504,6 +507,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1.2490672}
   m_Center: {x: 0, y: 0, z: 0.124533355}
+--- !u!114 &8855913605043483893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6883121537768824300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b5009952eb88b34b9931bf006c8838d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eatingFX: {fileID: 2944396702758532163, guid: 2b0ad97005ca21543baa5085fa20f042,
+    type: 3}
 --- !u!1 &8166419262420121869
 GameObject:
   m_ObjectHideFlags: 0
@@ -750,6 +767,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Eagle
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 66c14016956fe3e48b53013941b57424,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a72e4c5479c860546946c57f6ea16145, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -771,6 +793,12 @@ PrefabInstance:
       addedObject: {fileID: 1693723474227018729}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66c14016956fe3e48b53013941b57424, type: 3}
+--- !u!95 &1818930236991279571 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 66c14016956fe3e48b53013941b57424,
+    type: 3}
+  m_PrefabInstance: {fileID: 5211991605276683330}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3525661084774232077 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -524356186888774577, guid: 66c14016956fe3e48b53013941b57424,

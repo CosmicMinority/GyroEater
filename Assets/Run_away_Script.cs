@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemyfollow : MonoBehaviour
+public class Run_away_Script : MonoBehaviour
 {
     public Transform Player;
-    Rigidbody rb;
-    public float enemyspeed;
+    public Rigidbody FshRB;
+    public float Fishspeed;
     public bool attackPlayer;
-    public Animator fish;
+    //public Animator fish;
     private const string PlayerStr = "Player";
+    
     // Start is called before the first frame update
     private void Awake()
     {
@@ -21,44 +22,38 @@ public class Enemyfollow : MonoBehaviour
     {
         Wavefilter.startEnemyFollow -= StartChasing;
         Wavefilter.stopEnemyFollow -= StopChasing;
-       
+
     }
     void Start()
     {
 
-        rb = GetComponent<Rigidbody>();
+    
 
     }
 
-    
+
     void Update()
     {
-      if(attackPlayer)
-         {
-            
-           transform.position = Vector3.MoveTowards(transform.position, Player.transform.position, enemyspeed * Time.deltaTime);
-           transform.LookAt(Player.transform.position);
+
+       
+        if (attackPlayer)
+        {
+            transform.LookAt(Player);
+            transform.Rotate(0, 180, 0);
+            FshRB.AddRelativeForce(Vector3.forward * Fishspeed, ForceMode.Acceleration);
         }
 
     }
 
     void StartChasing()
     {
-        fish.SetBool("Chase", true);
+       // fish.SetBool("Chase", true);
         attackPlayer = true;
     }
 
     void StopChasing()
     {
-        fish.SetBool("Chase", false);
+        //fish.SetBool("Chase", false);
         attackPlayer = false;
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag(PlayerStr))
-        {
-            Debug.Log("death");
-        }
-    }
-
 }

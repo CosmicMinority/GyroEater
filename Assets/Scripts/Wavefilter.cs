@@ -8,11 +8,12 @@ public class Wavefilter : MonoBehaviour
     public GameObject Waterfilter;
     public static event Action startEnemyFollow;
     public static event Action stopEnemyFollow;
+    public const string player = "Player";
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        Waterfilter.SetActive(false);
     }
 
     // Update is called once per frame
@@ -22,12 +23,23 @@ public class Wavefilter : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        Waterfilter.SetActive(true);
+        if (other.gameObject.CompareTag(player))
+        { 
+
+            Waterfilter.SetActive(true);
         startEnemyFollow?.Invoke();
+
+        }
+       
     }
     private void OnTriggerExit(Collider other)
     {
-        Waterfilter.SetActive(false);
-        stopEnemyFollow?.Invoke();
+        if (other.gameObject.CompareTag(player))
+        {
+            Waterfilter.SetActive(false);
+            stopEnemyFollow?.Invoke();
+
+        }
+        
     }
 }
