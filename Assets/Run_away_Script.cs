@@ -13,7 +13,7 @@ public class Run_away_Script : MonoBehaviour
     private const string PlayerStr = "Player";
     
     public float attackRange;
-    public float waterrange;
+    
 
 
     // Start is called before the first frame update
