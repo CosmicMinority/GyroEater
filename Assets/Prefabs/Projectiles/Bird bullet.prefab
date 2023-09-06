@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7931021952942404732}
   - component: {fileID: 7061653780470766214}
   - component: {fileID: 6140967061289607981}
+  - component: {fileID: 8041068504575096611}
   m_Layer: 0
   m_Name: Bird bullet
   m_TagString: Untagged
@@ -149,6 +150,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bulspeed: 150
   Bul: {fileID: 7061653780470766214}
+--- !u!114 &8041068504575096611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3671883574948116398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3caa94ea4e53b045b2af8c4d4482d97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionTime: 5
 --- !u!1 &7742943318611665435
 GameObject:
   m_ObjectHideFlags: 0

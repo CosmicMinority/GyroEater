@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.Diagnostics;
 using System.Security.Cryptography;
 using System.Threading;
 using UnityEngine;
@@ -13,6 +14,10 @@ public class Gyro_Script : MonoBehaviour
     public Animator Animator;
     Vector3 RotAxis;
     public Transform player;
+    public int TurnA;
+    private bool Turnright = false;
+    private bool Turnup = false;
+    private bool Turnleft = false;
 
     // Start is called before the first frame update
     void Start()
@@ -35,17 +40,35 @@ public class Gyro_Script : MonoBehaviour
         
        
         Animator.SetFloat("Input direction",player.rotation.eulerAngles.x);
+       
+        //Changing Turn Speed
+
+        if (Turnright == true)
+        {
+            transform.Rotate(0, TurnA + Time.deltaTime, 0);
+        }
+        if (Turnup == true)
+        {
+            transform.Rotate(-TurnA - Time.deltaTime, 0, 0);
+        }
+        if (Turnleft == true)
+        {
+            transform.Rotate(0, -TurnA - Time.deltaTime, 0);
+        }
     }
-    public void Rightside()
+    public void Rightside(bool _Turnright)
     {
-        Debug.Log("right");
-        transform.Rotate(0,90,0);
+        Turnright = _Turnright;
 
     }
-    public void Leftside()
+    public void Leftside(bool _Turnleft)
     {
-        Debug.Log("left");
-        transform.Rotate(0,-90,0);
+       
+        Turnleft = _Turnleft;
 
+    }
+    public void Upside(bool _Turnup)
+    {
+        Turnup = _Turnup;
     }
 }

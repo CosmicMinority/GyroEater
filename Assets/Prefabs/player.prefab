@@ -294,6 +294,7 @@ MonoBehaviour:
   RotSpeed: 245
   Animator: {fileID: 1818930236991279571}
   player: {fileID: 904449582717050589}
+  TurnA: 30
 --- !u!114 &2560219516912440480
 MonoBehaviour:
   m_ObjectHideFlags: 0
