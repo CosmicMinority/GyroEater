@@ -6,6 +6,9 @@ TagManager:
   tags:
   - eat
   - Fish
+  - Shooting
+  - Island
+  - shooting point
   layers:
   - Default
   - TransparentFX

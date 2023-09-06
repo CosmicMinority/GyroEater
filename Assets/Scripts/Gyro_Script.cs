@@ -4,6 +4,7 @@ using System.Collections.Specialized;
 using System.Security.Cryptography;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Gyro_Script : MonoBehaviour
 {
@@ -34,5 +35,17 @@ public class Gyro_Script : MonoBehaviour
         
        
         Animator.SetFloat("Input direction",player.rotation.eulerAngles.x);
+    }
+    public void Rightside()
+    {
+        Debug.Log("right");
+        transform.Rotate(0,90,0);
+
+    }
+    public void Leftside()
+    {
+        Debug.Log("left");
+        transform.Rotate(0,-90,0);
+
     }
 }

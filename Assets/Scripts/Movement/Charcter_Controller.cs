@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Character_Controller : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class Character_Controller : MonoBehaviour
     //public float Lift;
     public float maxSpeed;
     Vector3 movementDirection;
+    public Transform Area;
+    public GameObject Bullet;
 
     
     // Start is called before the first frame update
@@ -30,4 +33,10 @@ public class Character_Controller : MonoBehaviour
 
        Rb.velocity = Vector3.ClampMagnitude(Rb.velocity, maxSpeed);
     }
+    public void SHoot()
+    {
+        Debug.Log("Button");
+        Instantiate(Bullet, Area.position, Quaternion.identity);
+    }
+
 }
